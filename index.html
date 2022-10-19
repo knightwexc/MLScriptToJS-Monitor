@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../src/favico.ico">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://use.fontawesome.com/e9edfd1f1d.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Procesadores Ryzen</title>
+</head>
+
+<body>
+    <div class="herramientas">
+        <div class="lado-izq">
+            <div class="total">
+            </div>
+        </div>
+
+        <p id="reload">Monitores</p>
+
+        <div class="lado-der">
+            <div class="search">
+                <svg x="0px" y="0px" viewBox="0 0 24 24" width="20px" height="20px">
+          <g stroke-linecap="square" stroke-linejoin="miter" stroke="currentColor">
+            <line fill="none" stroke-miterlimit="10" x1="22" y1="22" x2="16.4" y2="16.4" />
+            <circle fill="none" stroke="currentColor" stroke-miterlimit="10" cx="10" cy="10" r="9" />
+          </g>
+        </svg>
+                <div>
+                    <input type="text" placeholder="Busquemos algo...">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <main>
+        <div class="botones">
+            <a class="effect effect-1" id="reset" href="#" title="Learn More">Reset</a>
+            <a class="effect effect-2" id="save" href="#" title="Learn More">Guardar</a>
+            <a class="effect effect-3" id="compare" href="#" title="Learn More">Nuevos</a>
+            <a class="effect download" id="download" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#00000063" d="M384 128h-128V0L384 128zM256 160H384v304c0 26.51-21.49 48-48 48h-288C21.49 512 0 490.5 0 464v-416C0 21.49 21.49 0 48 0H224l.0039 128C224 145.7 238.3 160 256 160zM255 295L216 334.1V232c0-13.25-10.75-24-24-24S168 218.8 168 232v102.1L128.1 295C124.3 290.3 118.2 288 112 288S99.72 290.3 95.03 295c-9.375 9.375-9.375 24.56 0 33.94l80 80c9.375 9.375 24.56 9.375 33.94 0l80-80c9.375-9.375 9.375-24.56 0-33.94S264.4 285.7 255 295z"/></svg>
+            </a>
+        </div>
+        <h2 class="botones">&#129297 Nuevo desde el último guardado</h2>
+        <table class="container nuevos">
+            <tbody>
+                <tr class="border-bottom">
+                    <th id="images"></th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Envío gratis</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="botones">&#128546Vendidas</h2>
+        <table class="container vendidas">
+            <tbody>
+                <tr class="border-bottom">
+                    <th id="images"></th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Envío gratis</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="botones">&#129299 Actuales</h2>
+        <table class="container productos">
+            <tbody>
+                <tr class="border-bottom">
+                    <th id="images"></th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Envío gratis</th>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <span>Jonathan Calderón &reg</span>
+    </footer>
+    <div class="img-open-background"> </div>
+
+</body>
+<script src="./index.js"></script>
+
+</html>
